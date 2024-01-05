@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <!--box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!--header design-->
+    <header class="header">
+        <a href="#" class="logo">Nandun.</a>
+        <i class='bx bx-menu menuIcon' id ="menu-icon" onclick = "menu_clicked()"></i>
+        <script>
+            function check(){
+                let menuIcon = document.querySelector('#menu-icon');
+                let navbar = document.querySelector('.navbar');
+                menuIcon.classList.toggle('bx-x');
+                navbar.classList.toggle('active');
+            }
+        </script>
+        <nav class="navbar" id = "nav">
+           <a href="#home" class="active" onclick="check">Home</a>
+           <a href="#about">About</a>
+           <a href="#skills">Skills</a>
+           <a href="#services">Services</a>
+           <a href="#contact">Contact</a>
+
+    </nav>
+    </header>
+    <!--home section design-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+    
+            <h1>Nandun Ranasinghe</h1>
+            <h3>And I'm a <span>Frontend Developer</span></h3>
+            <p>I like making interactive things with code.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/nadun.ranasinghe.98?mibextid=ZbWKwL" target="_blank"><i class='bx bxl-facebook'></i></a>
+
+                <a href="https://www.instagram.com/nadun_ranasinghe_?igsh=Y202ZWw0Z3Nha2Vw" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="https://x.com/NYuwantha36938?t=_1UTXBOZB71vmW4SFbJYjQ&s=09" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.linkedin.com/in/nandun-ranasinghe-645898238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+         </div>
+         <a href="#" class="btn">Download CV</a>
+        </div>  
+        <div class="home-img">
+            <img src="home.png" alt="">
+
+        </div>
+    </section>
+    <!--about section design-->
+    <section class="about" id="about">
+        <div class="about-img" style = "margin-right: 20rem;">
+            <img src="about.png" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Frontend Developer</h3>
+            <p>I'm Nandun Ranasinghe,A first year undergraduate pursuing a BSc Hons in Computer Science at the University of Kelaniya.Beyond the world of coding,I also exel on the on the baseball field,proudly representing the university team. Balancing technical prowess with athletic dedication,I'm driven to succceed both in academics and sports</p>
+        <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+    <!--skills section design-->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skills-row">
+            <div class="skills-column">
+                <h3 class="tittle">Coding Skills</h3>
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>HTML <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>CSS <span>80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>JavaScript <span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Python <span>60%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="skills-column">
+                <h3 class="tittle">Professional Skills</h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>Web Design <span>80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Web Development <span>80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Graphic Design <span>95%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>SEO Marketing<span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+   <!--services section design--> 
+   <section class="services" id="services">
+   <h2 class="heading">My <span>Services</span></h2>
+   <div class="services-container">
+    <div class="services-box">
+        <i class='bx bx-code-alt'></i>
+        <h3>Web Development</h3>
+        <p>I specialize in building attractive and functional websites. My skills include HTML, CSS, JavaScript, and various frameworks for responsive and dynamic sites. I am experienced with content management systems and e-commerce platforms, offering versatile solutions for different project needs.</p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+    <div class="services-box">
+        <i class='bx bxs-paint'></i>
+        <h3>Graphic Design</h3>
+        <p>I design visuals that effectively communicate ideas. Using various design tools, I create engaging and polished graphics for logos, marketing materials, and social media. Check out my portfolio for examples of my work and let's bring your visual concepts to life together.</p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+    <div class="services-box">
+        <i class='bx bxs-bar-chart-alt-2'></i>
+        <h3>Digial Marketing</h3>
+        <p>In digital marketing, I have a proven record of creating effective campaigns that boost brand visibility. I specialize in SEO, social media, content marketing, and data analytics to strategically engage audiences. I stay updated on industry trends to provide clients with the latest solutions that deliver measurable results. </p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+   </div>
+</section>
+<!--contact section design-->
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+    <form action="#">
+        <div class="input-box">
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email Address">
+        </div>
+        <div class="input-box">
+            <input type="number" placeholder="Mobile Number">
+            <input type="text" placeholder="Email Subject">
+        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message" class="btn">
+    </form>
+</section>
+<!--footer design-->
+<footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; 2023 by Nandun | All Rights Reserved.</p>
+    </div>
+    <div class="footer-iconTop">
+        <a href="#"><i class='bx bx-up-arrow-alt' ></i></a>
+    </div>
+</footer>
+</body>
+</html>
